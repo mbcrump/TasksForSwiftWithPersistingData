@@ -7,7 +7,7 @@ The original blog post for this article can be found [here,](http://developer.te
 
 Below is several screenshots from the app that is in the AppStore: 
 
-![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_01.png =640x480)
+<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_01.png" align="left" height="48" width="48" ></a>
 ![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_02.png =640x480)
 ![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_03.png =640x480)
 ![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_04.png =640x480)

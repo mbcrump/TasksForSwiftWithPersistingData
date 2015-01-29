@@ -7,10 +7,10 @@ The original blog post for this article can be found [here,](http://developer.te
 
 Below is several screenshots from the app that is in the AppStore: 
 
-![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_01.png)
-![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_02.png)
-![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_03.png)
-![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_04.png)
+![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_01.png =250x)
+![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_02.png =250x)
+![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_03.png =250x)
+![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/SS_04.png =250x)
 
 ####Here is my contact info
 

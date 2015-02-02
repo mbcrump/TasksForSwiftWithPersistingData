@@ -7,7 +7,7 @@ The original blog post for this article can be found [here,](http://developer.te
 
 Below is a demo from the app that is in the AppStore: 
 
-![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/demo.gif)
+![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/demo.gif)
 
 [Here is the app in the AppStore](https://itunes.apple.com/us/app/task-application/id960435759?ls=1&mt=8)
 

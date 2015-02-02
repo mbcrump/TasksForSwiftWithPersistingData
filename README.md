@@ -7,10 +7,10 @@ The original blog post for this article can be found [here,](http://developer.te
 
 Below is several screenshots from the app that is in the AppStore: 
 
-<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/pr_source0.png" height="1136" width="640" ></a>
-<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/pr_source1.png" height="1136" width="640" ></a>
-<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/pr_source2.png" height="1136" width="640" ></a>
-<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/pr_source3.png" height="1136" width="640" ></a>
+<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/pr_source0.png"></a>
+<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/pr_source1.png"></a>
+<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/pr_source2.png"></a>
+<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/pr_source3.png"></a>
 
 ####Here is my contact info
 

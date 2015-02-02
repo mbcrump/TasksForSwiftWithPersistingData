@@ -5,12 +5,12 @@ by: [Michael Crump](http://twitter.com/mbcrump)
 
 The original blog post for this article can be found [here,](http://developer.telerik.com/featured/creating-task-application-ios-using-swift/) but it does not include some of the cosmetic tweaks that this version has, nor does it persist data. If you are looking for a simple example of creating a Task app then check my my other [repo.](https://github.com/mbcrump/TasksForSwift)
 
-Below is several screenshots from the app that is in the AppStore: 
+Below is a demo from the app that is in the AppStore: 
 
-<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/pr_source0.png" height="640" width="1136" ></a>
-<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/pr_source1.png" height="640" width="1136" ></a>
-<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/pr_source2.png" height="640" width="1136" ></a>
-<a href="url"><img src="https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/Images/pr_source3.png" height="640" width="1136" ></a>
+![image](https://github.com/mbcrump/TasksForSwiftWithPersistingData/blob/master/demo.gif)
+
+[Here is the app in the AppStore](https://itunes.apple.com/us/app/task-application/id960435759?ls=1&mt=8)
+
 
 ####Here is my contact info
 

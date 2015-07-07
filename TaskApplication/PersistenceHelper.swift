@@ -2,7 +2,7 @@
 //  PersistenceHelper.swift
 //  TaskApplication
 //
-//  Created by Michael Crump on 1/20/15.
+//  Created by Michael Crump
 //  Copyright (c) 2015 Michael Crump. All rights reserved.
 //
 

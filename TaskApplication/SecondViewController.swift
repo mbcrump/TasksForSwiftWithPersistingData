@@ -2,7 +2,7 @@
 //  SecondViewController.swift
 //  TaskApplication
 //
-//  Created by Michael Crump on 1/19/15.
+//  Created by Michael Crump
 //  Copyright (c) 2015 Michael Crump. All rights reserved.
 //
 
@@ -46,17 +46,11 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
-   // override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-   //     self.view.endEditing(true)
-   // }
         
     func textFieldShouldReturn(textField: UITextField) -> Bool{
         textField.resignFirstResponder()
         return true
     }
-    
-   
-
 
 }
 

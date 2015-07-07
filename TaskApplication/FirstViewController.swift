@@ -2,7 +2,7 @@
 //  FirstViewController.swift
 //  TaskApplication
 //
-//  Created by Michael Crump on 1/19/15.
+//  Created by Michael Crump
 //  Copyright (c) 2015 Michael Crump. All rights reserved.
 //
 

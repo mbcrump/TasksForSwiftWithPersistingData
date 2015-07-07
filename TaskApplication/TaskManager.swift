@@ -24,7 +24,7 @@ class TaskManager: NSObject {
         
         var tempTasks:NSArray = persistenceHelper.list("Task")
         for res:AnyObject in tempTasks{
-            tasks.append(Task(name:res.valueForKey("name")as String,description:res.valueForKey("desc") as String))
+            tasks.append(Task(name:res.valueForKey("name")as! String,description:res.valueForKey("desc") as! String))
         }
         
     }

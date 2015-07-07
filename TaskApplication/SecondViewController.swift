@@ -15,6 +15,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -41,10 +42,13 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
             
         }
     }
-    
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         self.view.endEditing(true)
     }
+    
+   // override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+   //     self.view.endEditing(true)
+   // }
         
     func textFieldShouldReturn(textField: UITextField) -> Bool{
         textField.resignFirstResponder()

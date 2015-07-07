@@ -20,7 +20,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tblTasks.reloadData()
+        self.tblTasks.reloadData()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.tblTasks.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,8 +32,10 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Dispose of any resources that can be recreated.
     }
     
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return taskMgr.tasks.count
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
@@ -50,6 +56,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             taskMgr.removeTask(indexPath.row)
             tblTasks.reloadData()
         }
+        
         
         
     }

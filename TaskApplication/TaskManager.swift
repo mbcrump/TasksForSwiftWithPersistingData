@@ -18,7 +18,7 @@ struct Task {
 class TaskManager: NSObject {
     
     var tasks = [Task]()
-     var persistenceHelper: PersistenceHelper = PersistenceHelper()
+    var persistenceHelper: PersistenceHelper = PersistenceHelper()
     
     override init(){
         
@@ -26,7 +26,6 @@ class TaskManager: NSObject {
         for res:AnyObject in tempTasks{
             tasks.append(Task(name:res.valueForKey("name")as! String,description:res.valueForKey("desc") as! String))
         }
-        
     }
     
     

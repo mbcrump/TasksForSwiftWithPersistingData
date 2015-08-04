@@ -38,6 +38,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
     
+    //Define how our cells look - 2 lines a heading and a subtitle
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Default Tasks")
         
@@ -56,13 +57,9 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             taskMgr.removeTask(indexPath.row)
             tblTasks.reloadData()
         }
-        
-        
-        
+ 
     }
     
-   
-        
 }
 
 

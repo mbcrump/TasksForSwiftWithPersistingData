@@ -1,7 +1,7 @@
 ###Task App for Swift that Persist Data with Core Data (iOS) 
 ================
 
-#####Updated for Xcode 6.4 with Swift 1.2
+#####Updated for Xcode 7 with Swift 2.0
 
 by: [Michael Crump](http://twitter.com/mbcrump)
 

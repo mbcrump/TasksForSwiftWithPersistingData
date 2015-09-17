@@ -15,39 +15,47 @@ class PersistenceHelper: NSObject {
     var context: NSManagedObjectContext;
     
     override init(){
-        context = appDel.managedObjectContext!
+        context = appDel.managedObjectContext
     }
     
     func save(entity: String, parameters: Dictionary<String,String> )->Bool{
         
-        var newEntity = NSEntityDescription.insertNewObjectForEntityForName(entity, inManagedObjectContext: context) as! NSManagedObject
+        let newEntity = NSEntityDescription.insertNewObjectForEntityForName(entity, inManagedObjectContext: context) 
         for (key, value) in parameters{
             newEntity.setValue(value, forKey: key)
         }
         
-        return context.save(nil)
+        do {
+            try context.save()
+            return true
+        } catch _ {
+            return false
+        }
     }
     
     func list(entity: String ) ->NSArray{
         
-        var request = NSFetchRequest(entityName: entity)
+        let request = NSFetchRequest(entityName: entity)
         request.returnsObjectsAsFaults = false;
-        var results: NSArray = context.executeFetchRequest(request, error: nil)!
+        let results: NSArray = try! context.executeFetchRequest(request)
         return results
     }
     
     func remove(entity:String, key:String, value:String)->Bool{
         
-        var request = NSFetchRequest(entityName: entity)
+        let request = NSFetchRequest(entityName: entity)
         request.returnsObjectsAsFaults = false
         request.predicate = NSPredicate(format: "\(key) = %@", value)
-        var results: NSArray = context.executeFetchRequest(request, error: nil)!
+        let results: NSArray = try! context.executeFetchRequest(request)
         
         if(results.count>0){
             
-            var res = results[0] as! NSManagedObject
+            let res = results[0] as! NSManagedObject
             context.deleteObject(res)
-            context.save(nil)
+            do {
+                try context.save()
+            } catch _ {
+            }
             return true
         }
         

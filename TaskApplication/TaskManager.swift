@@ -22,7 +22,7 @@ class TaskManager: NSObject {
     
     override init(){
         
-        var tempTasks:NSArray = persistenceHelper.list("Task")
+        let tempTasks:NSArray = persistenceHelper.list("Task")
         for res:AnyObject in tempTasks{
             tasks.append(Task(name:res.valueForKey("name")as! String,description:res.valueForKey("desc") as! String))
         }
@@ -42,7 +42,7 @@ class TaskManager: NSObject {
     
     func removeTask(index:Int){
         
-        var value:String = tasks[index].name
+        let value:String = tasks[index].name
         
         if(persistenceHelper.remove("Task", key: "name", value: value)){
             tasks.removeAtIndex(index)

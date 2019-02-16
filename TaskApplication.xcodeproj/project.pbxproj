@@ -15,7 +15,6 @@
 		86FF5BBA1A6D65FB00A017A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FF5BB81A6D65FB00A017A1 /* Main.storyboard */; };
 		86FF5BBC1A6D65FB00A017A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FF5BBB1A6D65FB00A017A1 /* Images.xcassets */; };
 		86FF5BBF1A6D65FB00A017A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86FF5BBD1A6D65FB00A017A1 /* LaunchScreen.xib */; };
-		86FF5BCB1A6D65FB00A017A1 /* TaskApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF5BCA1A6D65FB00A017A1 /* TaskApplicationTests.swift */; };
 		86FF5BD51A6D697400A017A1 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF5BD41A6D697400A017A1 /* TaskManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +40,6 @@
 		86FF5BBB1A6D65FB00A017A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		86FF5BBE1A6D65FB00A017A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		86FF5BC41A6D65FB00A017A1 /* TaskApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		86FF5BC91A6D65FB00A017A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		86FF5BCA1A6D65FB00A017A1 /* TaskApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskApplicationTests.swift; sourceTree = "<group>"; };
 		86FF5BD41A6D697400A017A1 /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				86FF5BAF1A6D65FB00A017A1 /* TaskApplication */,
-				86FF5BC71A6D65FB00A017A1 /* TaskApplicationTests */,
 				86FF5BAE1A6D65FB00A017A1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,23 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				86FF5BB11A6D65FB00A017A1 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		86FF5BC71A6D65FB00A017A1 /* TaskApplicationTests */ = {
-			isa = PBXGroup;
-			children = (
-				86FF5BCA1A6D65FB00A017A1 /* TaskApplicationTests.swift */,
-				86FF5BC81A6D65FB00A017A1 /* Supporting Files */,
-			);
-			path = TaskApplicationTests;
-			sourceTree = "<group>";
-		};
-		86FF5BC81A6D65FB00A017A1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				86FF5BC91A6D65FB00A017A1 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -175,7 +154,7 @@
 				TargetAttributes = {
 					86FF5BAC1A6D65FB00A017A1 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = FU3GVGK5AH;
+						DevelopmentTeam = 2X3M9VFULE;
 					};
 					86FF5BC31A6D65FB00A017A1 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -240,7 +219,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86FF5BCB1A6D65FB00A017A1 /* TaskApplicationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +292,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -348,6 +327,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -359,6 +339,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2X3M9VFULE;
 				INFOPLIST_FILE = TaskApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.michaelcrump.$(PRODUCT_NAME:rfc1034identifier)";
@@ -374,6 +355,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2X3M9VFULE;
 				INFOPLIST_FILE = TaskApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.michaelcrump.$(PRODUCT_NAME:rfc1034identifier)";

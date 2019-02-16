@@ -16,14 +16,14 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet var tblTasks : UITableView!
     
     //For persisting data
-    let defaults = NSUserDefaults.standardUserDefaults()
+  let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tblTasks.reloadData()
     }
     
-    override func viewWillAppear(animated: Bool) {
+  override func viewWillAppear(_ animated: Bool) {
         self.tblTasks.reloadData()
     }
 
@@ -33,14 +33,14 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return taskMgr.tasks.count
         
     }
     
     //Define how our cells look - 2 lines a heading and a subtitle
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "Default Tasks")
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+      let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "Default Tasks")
         
         //Assign the contents of our var "items" to the textLabel of each cell
         cell.textLabel!.text = taskMgr.tasks[indexPath.row].name
@@ -50,11 +50,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
     
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
+  func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath){
         
-        if (editingStyle == UITableViewCellEditingStyle.Delete){
+    if (editingStyle == UITableViewCell.EditingStyle.delete){
         
-            taskMgr.removeTask(indexPath.row)
+          taskMgr.removeTask(index: indexPath.row)
             tblTasks.reloadData()
         }
  

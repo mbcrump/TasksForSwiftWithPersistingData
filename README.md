@@ -1,9 +1,10 @@
-###Task App for Swift that Persist Data with Core Data (iOS) 
+# Task App for Swift that Persist Data with Core Data (iOS) 
 ================
 
-#####Updated for Xcode 7 with Swift 2.0
+## Updated for Xcode 10 with Swift 4.2
 
-by: [Michael Crump](http://twitter.com/mbcrump)
+Originally by: [Michael Crump](http://twitter.com/mbcrump)
+Updates for Xcode 10 with Swift 4.2 by David Phillip Oster
 
 The original blog post for this article can be found [here,](http://developer.telerik.com/featured/creating-task-application-ios-using-swift/) but it does not include some of the cosmetic tweaks that this version has, nor does it persist data. If you are looking for a simple example of creating a Task app then check my my other [repo.](https://github.com/mbcrump/TasksForSwift)
 

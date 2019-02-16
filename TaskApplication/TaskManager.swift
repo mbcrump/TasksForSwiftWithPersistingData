@@ -22,9 +22,9 @@ class TaskManager: NSObject {
     
     override init(){
         
-        let tempTasks:NSArray = persistenceHelper.list("Task")
-        for res:AnyObject in tempTasks{
-            tasks.append(Task(name:res.valueForKey("name")as! String,description:res.valueForKey("desc") as! String))
+      let tempTasks:NSArray = persistenceHelper.list(entity: "Task")
+        for res:Any in tempTasks {
+          tasks.append(Task(name:(res as AnyObject).value(forKey:"name")as! String,description:(res as AnyObject).value(forKey:"desc") as! String))
         }
     }
     
@@ -35,7 +35,7 @@ class TaskManager: NSObject {
         dicTask["name"] = name
         dicTask["desc"] = desc
         
-        if(persistenceHelper.save("Task", parameters: dicTask)){
+      if(persistenceHelper.save(entity: "Task", parameters: dicTask)){
             tasks.append(Task(name: name, description:desc))
         }
     }
@@ -44,8 +44,8 @@ class TaskManager: NSObject {
         
         let value:String = tasks[index].name
         
-        if(persistenceHelper.remove("Task", key: "name", value: value)){
-            tasks.removeAtIndex(index)
+      if(persistenceHelper.remove(entity: "Task", key: "name", value: value)){
+        tasks.remove(at:index)
         }
     }
 

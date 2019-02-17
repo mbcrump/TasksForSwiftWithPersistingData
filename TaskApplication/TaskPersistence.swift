@@ -9,28 +9,27 @@
 import UIKit
 import CoreData
 
-class PersistenceHelper: NSObject {
+class TaskPersistence: NSObject {
     
   var appDel: AppDelegate = (UIApplication.shared.delegate as! AppDelegate)
   var context: NSManagedObjectContext;
   
-  override init(){
+  override init() {
     context = appDel.managedObjectContext
   }
   
-  func construct(entity: String)-> Task? {
-    return NSEntityDescription.insertNewObject(forEntityName: entity, into: context) as? Task
+  func construct()-> Task? {
+    return NSEntityDescription.insertNewObject(forEntityName: "Task", into: context) as? Task
   }
   
-  func list(entity: String ) -> [Task] {
-    
-    let request = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+  func list() -> [Task] {
+    let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Task")
     request.returnsObjectsAsFaults = false;
     let results: [Task] = try! context.fetch(request) as! [Task]
     return results
   }
   
-  func remove(entity:String, instance: NSManagedObject) -> Bool {
+  func remove(instance: NSManagedObject) -> Bool {
     context.delete(instance)
     do {
       try context.save()

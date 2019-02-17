@@ -4,7 +4,9 @@
 //
 //  Created by Michael Crump
 //  Copyright (c) 2015 Michael Crump. All rights reserved.
-//
+//  Changes by David Phillip Oster on 2/17/19.
+// Added isDone BOOL here and in data model
+// Rewrote Data Model to use just Core Data, without the unnecessary Dictionary<String, String>
 
 import UIKit
 import CoreData
@@ -73,9 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         managedObjectContext.persistentStoreCoordinator = coordinator
         return managedObjectContext
         }()
-    
-    // MARK: - Core Data Saving support
-    
+        
     // MARK: - Core Data Saving support
     
     func saveContext () {

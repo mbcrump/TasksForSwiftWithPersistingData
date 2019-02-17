@@ -43,9 +43,13 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
       let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "Default Tasks")
         
         //Assign the contents of our var "items" to the textLabel of each cell
-        let task = taskMgr.tasks[indexPath.row]
-        cell.textLabel!.text = task.name
-        cell.detailTextLabel!.text = task.description
+       let task = taskMgr.tasks[indexPath.row]
+        let text = NSMutableAttributedString(string: task.name ?? "")
+        if task.isDone?.boolValue ?? false {
+          text.addAttribute(.strikethroughStyle, value: 1, range: NSMakeRange(0, text.length))
+        }
+        cell.textLabel!.attributedText = text
+        cell.detailTextLabel!.text = task.desc
         
         return cell
         
@@ -60,6 +64,18 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
  
     }
+
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+    if taskMgr.tasks[indexPath.row].isDone?.boolValue ?? false {
+        taskMgr.tasks[indexPath.row].isDone = nil
+    } else {
+       taskMgr.tasks[indexPath.row].isDone = true
+    }
+    
+      tableView.deselectRow(at: indexPath, animated: true)
+      tableView.reloadRows(at: [indexPath], with: .fade)
+  }
+
     
 }
 

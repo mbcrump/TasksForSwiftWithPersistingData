@@ -12,54 +12,32 @@ import CoreData
 class PersistenceHelper: NSObject {
     
   var appDel: AppDelegate = (UIApplication.shared.delegate as! AppDelegate)
-    var context: NSManagedObjectContext;
+  var context: NSManagedObjectContext;
+  
+  override init(){
+    context = appDel.managedObjectContext
+  }
+  
+  func construct(entity: String)-> Task? {
+    return NSEntityDescription.insertNewObject(forEntityName: entity, into: context) as? Task
+  }
+  
+  func list(entity: String ) -> [Task] {
     
-    override init(){
-        context = appDel.managedObjectContext
+    let request = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+    request.returnsObjectsAsFaults = false;
+    let results: [Task] = try! context.fetch(request) as! [Task]
+    return results
+  }
+  
+  func remove(entity:String, instance: NSManagedObject) -> Bool {
+    context.delete(instance)
+    do {
+      try context.save()
+    } catch _ {
+      return false
     }
-    
-    func save(entity: String, parameters: Dictionary<String,String> )->Bool{
-        
-      let newEntity = NSEntityDescription.insertNewObject(forEntityName: entity, into: context)
-        for (key, value) in parameters{
-            newEntity.setValue(value, forKey: key)
-        }
-        
-        do {
-            try context.save()
-            return true
-        } catch _ {
-            return false
-        }
-    }
-    
-    func list(entity: String ) ->NSArray{
-        
-      let request = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
-        request.returnsObjectsAsFaults = false;
-      let results: NSArray = try! context.fetch(request) as NSArray
-        return results
-    }
-    
-    func remove(entity:String, key:String, value:String)->Bool{
-        
-      let request = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
-        request.returnsObjectsAsFaults = false
-        request.predicate = NSPredicate(format: "\(key) = %@", value)
-      let results: NSArray = try! context.fetch(request) as NSArray
-        
-        if(results.count>0){
-            
-            let res = results[0] as! NSManagedObject
-          context.delete(res)
-            do {
-                try context.save()
-            } catch _ {
-            }
-            return true
-        }
-        
-        return false
-    }
-    
+    return true
+  }
+  
 }

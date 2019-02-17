@@ -4,16 +4,13 @@
 //
 //  Created by Michael Crump
 //  Copyright (c) 2015 Michael Crump. All rights reserved.
-//
+//  Changes by David Phillip Oster on 2/17/19.
+// Added isDone BOOL here and in data model
+// Rewrite Data Model to use just Core Data, without the unnecessary Dictionary<String, String>
 
 import UIKit
 
 var taskMgr: TaskManager = TaskManager()
-
-struct Task {
-    var name = "Name"
-    var description = "Description"
-}
 
 class TaskManager: NSObject {
     
@@ -22,31 +19,25 @@ class TaskManager: NSObject {
     
     override init(){
         
-      let tempTasks:NSArray = persistenceHelper.list(entity: "Task")
-        for res:Any in tempTasks {
-          tasks.append(Task(name:(res as AnyObject).value(forKey:"name")as! String,description:(res as AnyObject).value(forKey:"desc") as! String))
-        }
+      let tempTasks:[Task] = persistenceHelper.list(entity: "Task")
+      tasks = tempTasks
     }
     
     
-    func addTask(name:String, desc: String){
-        
-        var dicTask: Dictionary<String, String> = Dictionary<String,String>()
-        dicTask["name"] = name
-        dicTask["desc"] = desc
-        
-      if(persistenceHelper.save(entity: "Task", parameters: dicTask)){
-            tasks.append(Task(name: name, description:desc))
-        }
+    func addTask(name:String, desc: String, isDone: Bool){
+      if let task = persistenceHelper.construct(entity: "Task") {
+        task.desc = desc
+        task.name = name
+        task.isDone = isDone as NSNumber
+        tasks.append(task)
+      }
     }
     
     func removeTask(index:Int){
-        
-        let value:String = tasks[index].name
-        
-      if(persistenceHelper.remove(entity: "Task", key: "name", value: value)){
-        tasks.remove(at:index)
-        }
+      let task = tasks[index]
+      if persistenceHelper.remove(entity: "Task", instance: task) {
+        tasks.remove(at: index)
+      }
     }
 
     

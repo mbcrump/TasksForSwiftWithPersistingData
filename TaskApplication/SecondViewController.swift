@@ -32,7 +32,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
             //add record
             let name: String = txtTask.text!
             let description: String = txtDesc.text!
-          taskMgr.addTask(name: name, desc: description)
+          taskMgr.addTask(name: name, desc: description, isDone: false)
             
             //dismiss keyboard and reset fields
             

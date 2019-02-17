@@ -14,9 +14,10 @@ var taskMgr: TaskManager = TaskManager()
 
 class TaskManager: NSObject {
   var tasks: [Task]
-  var taskPersistence = TaskPersistence()
+  var taskPersistence: TaskPersistence
 
   override init() {
+    taskPersistence = TaskPersistence()
     tasks = taskPersistence.list()
   }
   

@@ -14,8 +14,11 @@ Below is a demo from the app that is in the AppStore:
 
 [Here is the app in the AppStore](https://itunes.apple.com/us/app/task-application/id960435759?ls=1&mt=8)
 
+## Oster's comments:
 
-####Here is my contact info
+I took advantage of Xcode's 'Generated NSManagedObjects subclasses' menu command to directly access the Core Data `Task` object. I fixed the appDelegate methods that the operating system was not calling. I removed the do-nothing tests directory and target. I added  [sumitmukhija](https://github.com/sumitmukhija)'s U.I. for denoting a completed task, but I also connected it through to the underlying data model. The original app had no way to update an existing record. Added.
+
+#### Here is Michael Crump's contact info
 
 [Twitter](http://twitter.com/mbcrump)
 

@@ -12,8 +12,8 @@
 		8685C2211A6F503100F5CE9F /* TaskPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685C2201A6F503100F5CE9F /* TaskPersistence.swift */; };
 		8685C2261A6F550A00F5CE9F /* TaskApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8685C2241A6F550A00F5CE9F /* TaskApplication.xcdatamodeld */; };
 		86FF5BB31A6D65FB00A017A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF5BB21A6D65FB00A017A1 /* AppDelegate.swift */; };
-		86FF5BB51A6D65FB00A017A1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF5BB41A6D65FB00A017A1 /* FirstViewController.swift */; };
-		86FF5BB71A6D65FB00A017A1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF5BB61A6D65FB00A017A1 /* SecondViewController.swift */; };
+		86FF5BB51A6D65FB00A017A1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF5BB41A6D65FB00A017A1 /* TableViewController.swift */; };
+		86FF5BB71A6D65FB00A017A1 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF5BB61A6D65FB00A017A1 /* TaskDetailViewController.swift */; };
 		86FF5BBA1A6D65FB00A017A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FF5BB81A6D65FB00A017A1 /* Main.storyboard */; };
 		86FF5BBC1A6D65FB00A017A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FF5BBB1A6D65FB00A017A1 /* Images.xcassets */; };
 		86FF5BBF1A6D65FB00A017A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86FF5BBD1A6D65FB00A017A1 /* LaunchScreen.xib */; };
@@ -31,8 +31,8 @@
 		86FF5BAD1A6D65FB00A017A1 /* TaskApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86FF5BB11A6D65FB00A017A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86FF5BB21A6D65FB00A017A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		86FF5BB41A6D65FB00A017A1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		86FF5BB61A6D65FB00A017A1 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		86FF5BB41A6D65FB00A017A1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		86FF5BB61A6D65FB00A017A1 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 		86FF5BB91A6D65FB00A017A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86FF5BBB1A6D65FB00A017A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		86FF5BBE1A6D65FB00A017A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -70,8 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				86FF5BB21A6D65FB00A017A1 /* AppDelegate.swift */,
-				86FF5BB41A6D65FB00A017A1 /* FirstViewController.swift */,
-				86FF5BB61A6D65FB00A017A1 /* SecondViewController.swift */,
+				86FF5BB41A6D65FB00A017A1 /* TableViewController.swift */,
+				86FF5BB61A6D65FB00A017A1 /* TaskDetailViewController.swift */,
 				86FF5BB81A6D65FB00A017A1 /* Main.storyboard */,
 				86FF5BBB1A6D65FB00A017A1 /* Images.xcassets */,
 				86FF5BBD1A6D65FB00A017A1 /* LaunchScreen.xib */,
@@ -170,12 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86FF5BB71A6D65FB00A017A1 /* SecondViewController.swift in Sources */,
+				86FF5BB71A6D65FB00A017A1 /* TaskDetailViewController.swift in Sources */,
 				86FF5BB31A6D65FB00A017A1 /* AppDelegate.swift in Sources */,
 				63D626042219DF46001EA35C /* Task+CoreDataProperties.m in Sources */,
 				86FF5BD51A6D697400A017A1 /* TaskManager.swift in Sources */,
 				8685C2211A6F503100F5CE9F /* TaskPersistence.swift in Sources */,
-				86FF5BB51A6D65FB00A017A1 /* FirstViewController.swift in Sources */,
+				86FF5BB51A6D65FB00A017A1 /* TableViewController.swift in Sources */,
 				8685C2261A6F550A00F5CE9F /* TaskApplication.xcdatamodeld in Sources */,
 				63D626032219DF46001EA35C /* Task+CoreDataClass.m in Sources */,
 			);

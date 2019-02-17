@@ -11,10 +11,11 @@ import CoreData
 
 class TaskPersistence: NSObject {
     
-  var appDel: AppDelegate = (UIApplication.shared.delegate as! AppDelegate)
+  var appDel: AppDelegate
   var context: NSManagedObjectContext;
   
   override init() {
+    appDel = (UIApplication.shared.delegate as! AppDelegate)
     context = appDel.managedObjectContext
   }
   

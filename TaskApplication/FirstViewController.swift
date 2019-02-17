@@ -43,8 +43,9 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
       let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "Default Tasks")
         
         //Assign the contents of our var "items" to the textLabel of each cell
-        cell.textLabel!.text = taskMgr.tasks[indexPath.row].name
-        cell.detailTextLabel!.text = taskMgr.tasks[indexPath.row].description
+        let task = taskMgr.tasks[indexPath.row]
+        cell.textLabel!.text = task.name
+        cell.detailTextLabel!.text = task.description
         
         return cell
         

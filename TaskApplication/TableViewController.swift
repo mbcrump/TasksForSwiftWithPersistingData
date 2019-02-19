@@ -49,11 +49,8 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-    if taskMgr.tasks[indexPath.row].isDone?.boolValue ?? false {
-      taskMgr.tasks[indexPath.row].isDone = nil
-    } else {
-      taskMgr.tasks[indexPath.row].isDone = true
-    }
+    let isDone = taskMgr.tasks[indexPath.row].isDone?.boolValue ?? false
+    taskMgr.tasks[indexPath.row].isDone = NSNumber(booleanLiteral: !isDone)
     tableView.deselectRow(at: indexPath, animated: true)
     tableView.reloadRows(at: [indexPath], with: .fade)
   }

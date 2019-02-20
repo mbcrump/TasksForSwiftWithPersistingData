@@ -38,7 +38,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     cell.detailTextLabel!.text = task.desc
     
     return cell
-    
   }
     
   func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -55,7 +54,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     tableView.reloadRows(at: [indexPath], with: .fade)
   }
 
-    
 }
 
 

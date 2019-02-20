@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63D626032219DF46001EA35C /* Task+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D626012219DF46001EA35C /* Task+CoreDataClass.m */; };
-		63D626042219DF46001EA35C /* Task+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D626022219DF46001EA35C /* Task+CoreDataProperties.m */; };
+		63C79C05221CEE6700159B4D /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C79C03221CEE6700159B4D /* Task+CoreDataClass.swift */; };
+		63C79C06221CEE6700159B4D /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C79C04221CEE6700159B4D /* Task+CoreDataProperties.swift */; };
 		8685C2211A6F503100F5CE9F /* TaskPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685C2201A6F503100F5CE9F /* TaskPersistence.swift */; };
 		8685C2261A6F550A00F5CE9F /* TaskApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8685C2241A6F550A00F5CE9F /* TaskApplication.xcdatamodeld */; };
 		86FF5BB31A6D65FB00A017A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF5BB21A6D65FB00A017A1 /* AppDelegate.swift */; };
@@ -21,11 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		63D625FE2219DF45001EA35C /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		63D625FF2219DF46001EA35C /* Task+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Task+CoreDataProperties.h"; sourceTree = "<group>"; };
-		63D626002219DF46001EA35C /* Task+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Task+CoreDataClass.h"; sourceTree = "<group>"; };
-		63D626012219DF46001EA35C /* Task+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Task+CoreDataClass.m"; sourceTree = "<group>"; };
-		63D626022219DF46001EA35C /* Task+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Task+CoreDataProperties.m"; sourceTree = "<group>"; };
+		63C79C03221CEE6700159B4D /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		63C79C04221CEE6700159B4D /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8685C2201A6F503100F5CE9F /* TaskPersistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPersistence.swift; sourceTree = "<group>"; };
 		8685C2251A6F550A00F5CE9F /* TaskApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskApplication.xcdatamodel; sourceTree = "<group>"; };
 		86FF5BAD1A6D65FB00A017A1 /* TaskApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,11 +83,8 @@
 		86FF5BB01A6D65FB00A017A1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				63D625FE2219DF45001EA35C /* Bridging-Header.h */,
-				63D625FF2219DF46001EA35C /* Task+CoreDataProperties.h */,
-				63D626002219DF46001EA35C /* Task+CoreDataClass.h */,
-				63D626012219DF46001EA35C /* Task+CoreDataClass.m */,
-				63D626022219DF46001EA35C /* Task+CoreDataProperties.m */,
+				63C79C03221CEE6700159B4D /* Task+CoreDataClass.swift */,
+				63C79C04221CEE6700159B4D /* Task+CoreDataProperties.swift */,
 				86FF5BB11A6D65FB00A017A1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -129,7 +123,6 @@
 				TargetAttributes = {
 					86FF5BAC1A6D65FB00A017A1 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 2X3M9VFULE;
 						LastSwiftMigration = 1010;
 					};
 				};
@@ -171,13 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				86FF5BB71A6D65FB00A017A1 /* TaskDetailViewController.swift in Sources */,
+				63C79C05221CEE6700159B4D /* Task+CoreDataClass.swift in Sources */,
 				86FF5BB31A6D65FB00A017A1 /* AppDelegate.swift in Sources */,
-				63D626042219DF46001EA35C /* Task+CoreDataProperties.m in Sources */,
 				86FF5BD51A6D697400A017A1 /* TaskManager.swift in Sources */,
 				8685C2211A6F503100F5CE9F /* TaskPersistence.swift in Sources */,
 				86FF5BB51A6D65FB00A017A1 /* TableViewController.swift in Sources */,
 				8685C2261A6F550A00F5CE9F /* TaskApplication.xcdatamodeld in Sources */,
-				63D626032219DF46001EA35C /* Task+CoreDataClass.m in Sources */,
+				63C79C06221CEE6700159B4D /* Task+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +235,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "TaskApplication/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.2;
@@ -280,7 +272,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "TaskApplication/Bridging-Header.h";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
@@ -295,13 +286,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2X3M9VFULE;
 				INFOPLIST_FILE = TaskApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.michaelcrump.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "TaskApplication/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
@@ -315,13 +304,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2X3M9VFULE;
 				INFOPLIST_FILE = TaskApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.michaelcrump.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "TaskApplication/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
